@@ -49,3 +49,4 @@ The mod adds youtubers, twitch streamers and other types of content creators tha
 ### **Links/Mod Pages** 🔗
 ---
 - Discord Server: https://discord.gg/5fSqe6B6wS
+- Github: https://github.com/exhausted-yami/CreatorPlus-Mod
