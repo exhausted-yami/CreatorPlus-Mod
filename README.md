@@ -1,4 +1,4 @@
-![Mod banner for description](https://cdn.modrinth.com/data/cached_images/40f9a2ba48973dca44ed2a7bdc0725980e69d0ff.png)
+![Mod banner for description](https://cdn.modrinth.com/data/lJZeTC6T/images/8a0799e5bbc6e04d42906a6d08528f6f3ab86a51.png)
 
 ---
 
@@ -49,4 +49,5 @@ The mod adds youtubers, twitch streamers and other types of content creators tha
 ### **Links/Mod Pages** 🔗
 ---
 - Discord Server: https://discord.gg/5fSqe6B6wS
+- Guilded Server: https://guilded.gg/CPlus
 - Github: https://github.com/exhausted-yami/CreatorPlus-Mod
