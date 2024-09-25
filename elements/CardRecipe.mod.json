@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      },
+      {
+        "value": "TAG:minecraft:cash_item"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Card"
+    },
+    "name": "card_recipe",
+    "namespace": "mod"
+  }
+}

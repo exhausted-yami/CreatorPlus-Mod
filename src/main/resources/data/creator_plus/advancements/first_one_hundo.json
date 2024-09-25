@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "creator_plus:one_hundred"
+    },
+    "title": {
+      "translate": "advancements.first_one_hundo.title"
+    },
+    "description": {
+      "translate": "advancements.first_one_hundo.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "first_one_hundo_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "creator_plus:one_hundred"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 4,
+    "recipes": [
+      "creator_plus:card_recipe"
+    ]
+  },
+  "parent": "creator_plus:creator_plus_advancement"
+}

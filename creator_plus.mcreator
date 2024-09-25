@@ -1,0 +1,929 @@
+{
+  "mod_elements": [
+    {
+      "name": "OneHundred",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_hundred",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/item/OneHundredItem.java",
+          "src/main/resources/assets/creator_plus/models/item/one_hundred.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CreatorPlus",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creator_plus",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "OneThousand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_thousand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/one_thousand.json",
+          "src/main/java/net/mcreator/creator/item/OneThousandItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TenThousand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ten_thousand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/item/TenThousandItem.java",
+          "src/main/resources/assets/creator_plus/models/item/ten_thousand.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "OneHundredThousand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_hundred_thousand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/item/OneHundredThousandItem.java",
+          "src/main/resources/assets/creator_plus/models/item/one_hundred_thousand.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "OneMillion",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_million",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/one_million.json",
+          "src/main/java/net/mcreator/creator/item/OneMillionItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LootCrate",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_crate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/client/renderer/LootCrateRenderer.java",
+          "src/main/java/net/mcreator/creator/entity/LootCrateEntity.java",
+          "src/main/resources/data/creator_plus/neoforge/biome_modifier/loot_crate_biome_modifier.json",
+          "src/main/resources/assets/creator_plus/models/item/loot_crate_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "LootCrateOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_crate_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/LootCrateOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Procedures"
+    },
+    {
+      "name": "LootCrateTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_crate_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/loot_tables/entities/loot_crate.json"
+        ]
+      },
+      "path": "~/Entities/Loot Tables"
+    },
+    {
+      "name": "TheNorthTreePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_north_tree_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/the_north_tree_pickaxe.json",
+          "src/main/java/net/mcreator/creator/item/TheNorthTreePickaxeItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Player",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/entity/PlayerEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/PlayerRenderer.java",
+          "src/main/resources/assets/creator_plus/models/item/player_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "PlayerLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/loot_tables/entities/player.json"
+        ]
+      },
+      "path": "~/Entities/Loot Tables"
+    },
+    {
+      "name": "Card",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/item/inventory/CardInventoryCapability.java",
+          "src/main/resources/assets/creator_plus/models/item/card.json",
+          "src/main/java/net/mcreator/creator/item/CardItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CardGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/world/inventory/CardGuiMenu.java",
+          "src/main/java/net/mcreator/creator/client/gui/CardGuiScreen.java"
+        ]
+      },
+      "path": "~/Items/Item Gui"
+    },
+    {
+      "name": "StructureLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "structure_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/loot_tables/chests/structure_loot_table.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "NorthHouse",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "north_house",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/worldgen/structure/north_house.json",
+          "src/main/resources/data/creator_plus/worldgen/structure_set/north_house.json",
+          "src/main/resources/data/creator_plus/worldgen/template_pool/north_house.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "NorthWestTrees",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "north_west_trees",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/entity/NorthWestTreesEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/NorthWestTreesRenderer.java",
+          "src/main/resources/assets/creator_plus/models/item/north_west_trees_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "MobDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/MobDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Procedures"
+    },
+    {
+      "name": "CardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/recipes/card_recipe.json"
+        ]
+      },
+      "path": "~/Items/Recipes"
+    },
+    {
+      "name": "FirstOneHundo",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_one_hundo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/advancements/first_one_hundo.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "CreatorPlusModLogo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creator_plus_mod_logo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/creator_plus_mod_logo.json",
+          "src/main/java/net/mcreator/creator/item/CreatorPlusModLogoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CreatorPlusAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creator_plus_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/advancements/creator_plus_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "CreatorPlusAdvancementProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creator_plus_advancement_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/CreatorPlusAdvancementProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Advancements/Procedures"
+    },
+    {
+      "name": "RandomEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/RandomEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "Random",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/potion/RandomMobEffect.java"
+        ]
+      },
+      "path": "~/Items/Effects"
+    },
+    {
+      "name": "SpeedrunnersBladeToolInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speedrunners_blade_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/SpeedrunnersBladeToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "SpeedrunnersBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speedrunners_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/item/SpeedrunnersBladeItem.java",
+          "src/main/resources/assets/creator_plus/models/item/speedrunners_blade.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Dream",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/entity/DreamEntity.java",
+          "src/main/resources/assets/creator_plus/models/item/dream_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/client/renderer/DreamRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "SSundee",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ssundee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/client/renderer/SSundeeRenderer.java",
+          "src/main/resources/assets/creator_plus/models/item/ssundee_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/SSundeeEntity.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "ChaoticPotion",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaotic_potion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/chaotic_potion.json",
+          "src/main/java/net/mcreator/creator/item/ChaoticPotionItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "Tommyinnit",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tommyinnit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/tommyinnit_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/TommyinnitEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/TommyinnitRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "TechnoBlade",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techno_blade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/techno_blade_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/TechnoBladeEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/TechnoBladeRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "Aphmau",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aphmau",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/entity/AphmauEntity.java",
+          "src/main/resources/assets/creator_plus/models/item/aphmau_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/client/renderer/AphmauRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "AuthenticGames",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "authentic_games",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/client/renderer/AuthenticGamesRenderer.java",
+          "src/main/java/net/mcreator/creator/entity/AuthenticGamesEntity.java",
+          "src/main/resources/assets/creator_plus/models/item/authentic_games_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "DanTDM",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dan_tdm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/client/renderer/DanTDMRenderer.java",
+          "src/main/resources/assets/creator_plus/models/item/dan_tdm_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/DanTDMEntity.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "ElTrollino",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "el_trollino",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/entity/ElTrollinoEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/ElTrollinoRenderer.java",
+          "src/main/resources/assets/creator_plus/models/item/el_trollino_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "PopularMMOs",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popular_mm_os",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/popular_mm_os_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/PopularMMOsEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/PopularMMOsRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "MikeCrack",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mike_crack",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/neoforge/biome_modifier/mike_crack_biome_modifier.json",
+          "src/main/java/net/mcreator/creator/entity/MikeCrackEntity.java",
+          "src/main/resources/assets/creator_plus/models/item/mike_crack_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/client/renderer/MikeCrackRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "GamingWithJen",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gaming_with_jen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/entity/GamingWithJenEntity.java",
+          "src/main/resources/assets/creator_plus/models/item/gaming_with_jen_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/client/renderer/GamingWithJenRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "PranksterWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prankster_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/item/PranksterWandItem.java",
+          "src/main/resources/assets/creator_plus/models/item/prankster_wand.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "WoofingSprings",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woofing_springs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/worldgen/biome/woofing_springs.json"
+        ]
+      }
+    },
+    {
+      "name": "MikecrackFavoriteDogcharacter",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mikecrack_favorite_dogcharacter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/creator_plus/advancements/mikecrack_favorite_dogcharacter.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "LootCrateNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_crate_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/LootCrateNaturalEntitySpawningConditionProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Entities/Procedures"
+    },
+    {
+      "name": "DiamondMinecart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_minecart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/diamond_minecart.json",
+          "src/main/java/net/mcreator/creator/item/DiamondMinecartItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DiamondMinecartMob",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_minecart_mob",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/diamond_minecart_mob_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/DiamondMinecartMobEntity.java",
+          "src/main/java/net/mcreator/creator/client/renderer/DiamondMinecartMobRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "DiamondMinecartRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_minecart_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/DiamondMinecartRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "playerBal",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BIOMES:minecraft:valid_spawn_modded": [
+      "CUSTOM:WoofingSprings",
+      "badlands",
+      "bamboo_jungle",
+      "beaches",
+      "birch_forest",
+      "cherry_grove",
+      "roofed_forest",
+      "desert",
+      "mutated_mesa",
+      "mutated_forest",
+      "forest",
+      "frozen_peaks",
+      "grove",
+      "mutated_ice_flats",
+      "jagged_peaks",
+      "jungle",
+      "mangrove_swamp",
+      "meadow",
+      "mushroom_fields",
+      "mutated_birch_forest",
+      "redwood_taiga",
+      "mutated_redwood_taiga",
+      "plains",
+      "savanna",
+      "savanna_rock",
+      "snowy_slopes",
+      "cold_beach",
+      "snowy_tundra",
+      "taiga_cold",
+      "jungle_edge",
+      "stony_peaks",
+      "stone_beach",
+      "mutated_plains",
+      "swamp",
+      "taiga",
+      "extreme_hills_with_trees",
+      "mutated_extreme_hills",
+      "mountains",
+      "mutated_savanna",
+      "wooded_badlands_plateau"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:TheNorthTreePickaxe"
+    ],
+    "ITEMS:minecraft:cash_item": [
+      "CUSTOM:OneHundred",
+      "CUSTOM:OneThousand",
+      "CUSTOM:TenThousand",
+      "CUSTOM:OneHundredThousand",
+      "CUSTOM:OneMillion"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:SpeedrunnersBlade"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.creator_plus.dream": "Dream",
+      "advancements.mikecrack_favorite_dogcharacter.descr": "Enter the Woofing Springs biome",
+      "entity.creator_plus.tommyinnit": "Tommyinnit",
+      "advancements.mikecrack_favorite_dogcharacter.title": "Mikecrack dream biome",
+      "item.creator_plus.dream_spawn_egg": "Dream Spawn Egg",
+      "item.creator_plus.el_trollino_spawn_egg": "ElTrollino Spawn Egg",
+      "item.creator_plus.speedrunners_blade": "Speedrunners Blade",
+      "entity.creator_plus.el_trollino": "ElTrollino",
+      "entity.creator_plus.diamond_minecart_mob": "Diamond Minecart",
+      "item.creator_plus.chaotic_potion": "Chaotic Potion",
+      "entity.creator_plus.player": "Player",
+      "entity.creator_plus.authentic_games": "AuthenticGames",
+      "item.creator_plus.popular_mm_os_spawn_egg": "PopularMMOs Spawn Egg",
+      "effect.creator_plus.random": "Random",
+      "item.creator_plus.north_west_trees_spawn_egg": "NorthWestTrees Spawn Egg",
+      "entity.creator_plus.gaming_with_jen": "GamingWithJen",
+      "item.creator_plus.gaming_with_jen_spawn_egg": "GamingWithJen Spawn Egg",
+      "item.creator_plus.one_million": "$1,000,000 Bill",
+      "entity.creator_plus.techno_blade": "Technoblade",
+      "entity.creator_plus.ssundee": "Ssundee",
+      "item.creator_plus.one_hundred": "$100 Bill",
+      "item_group.creator_plus.creator_plus": "Creator+",
+      "item.creator_plus.techno_blade_spawn_egg": "Technoblade Spawn Egg",
+      "item.creator_plus.player_spawn_egg": "Player Spawn Egg",
+      "item.creator_plus.creator_plus_mod_logo": "Creator Plus Mod Logo",
+      "item.creator_plus.loot_crate_spawn_egg": "Loot Crate Spawn Egg",
+      "item.creator_plus.one_thousand": "$1000 Bill",
+      "item.creator_plus.mike_crack_spawn_egg": "MikeCrack Spawn Egg",
+      "advancements.first_one_hundo.title": "First One Hundo",
+      "biome.creator_plus.woofing_springs": "Woofing Springs",
+      "advancements.first_one_hundo.descr": "Optain your first $100",
+      "item.creator_plus.ssundee_spawn_egg": "Ssundee Spawn Egg",
+      "advancements.creator_plus_advancement.descr": "Start a world with the Creator+ mod in it",
+      "item.creator_plus.prankster_wand": "Prankster’s Wand",
+      "item.creator_plus.dan_tdm_spawn_egg": "DanTDM Spawn Egg",
+      "entity.creator_plus.north_west_trees": "NorthWestTrees",
+      "item.creator_plus.diamond_minecart_mob_spawn_egg": "Diamond Minecart Spawn Egg",
+      "advancements.creator_plus_advancement.title": "Creator+ Mod",
+      "item.creator_plus.authentic_games_spawn_egg": "AuthenticGames Spawn Egg",
+      "item.creator_plus.one_hundred_thousand": "$100,000 Bill",
+      "item.creator_plus.ten_thousand": "$10,000 Bill",
+      "item.creator_plus.aphmau_spawn_egg": "Aphmau Spawn Egg",
+      "entity.creator_plus.aphmau": "Aphmau",
+      "item.creator_plus.tommyinnit_spawn_egg": "Tommyinnit Spawn Egg",
+      "item.creator_plus.the_north_tree_pickaxe": "The North Tree Pickaxe",
+      "item.creator_plus.card": "Card",
+      "entity.creator_plus.dan_tdm": "DanTDM",
+      "entity.creator_plus.mike_crack": "MikeCrack",
+      "entity.creator_plus.popular_mm_os": "PopularMMOs",
+      "entity.creator_plus.loot_crate": "Loot Crate",
+      "gui.creator_plus.card_gui.label_bank": "Bank",
+      "item.creator_plus.diamond_minecart": "Diamond Minecart"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Item Gui",
+            "children": []
+          },
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "Effects",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": [
+          {
+            "name": "Loot Tables",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Advancements",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "creator_plus",
+    "modName": "Creator+",
+    "version": "0.0.1",
+    "description": "Introducing Creator+ mod, a Minecraft mod that brings your favorite Minecraft content creators to into the game!\\n\\nThe mod adds youtubers, twitch streamers and other types of content creators that are apart of the MC community into the game. The mod plans on having custom biomes, weapons, items and blocks into the game that are themed around content creators. ",
+    "author": "Yami",
+    "websiteURL": "https://yami-pl.xyz/",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "creator_logo_square",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.6",
+    "credits": "Yami and all creators in the mod",
+    "modElementsPackage": "net.mcreator.creator"
+  },
+  "mcreatorVersion": 202400232117
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "id": "creator_plus:creator_plus_mod_logo"
+    },
+    "title": {
+      "translate": "advancements.creator_plus_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.creator_plus_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "creator_plus_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

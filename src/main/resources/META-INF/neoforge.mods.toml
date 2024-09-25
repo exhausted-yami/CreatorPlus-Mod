@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="creator_plus"
+version="0.0.1"
+displayName="Creator+"
+displayURL="https://yami-pl.xyz/"
+logoFile="logo.png"
+credits="Yami and all creators in the mod"
+authors="Yami"
+description="Introducing Creator+ mod, a Minecraft mod that brings your favorite Minecraft content creators to into the game!\n\nThe mod adds youtubers, twitch streamers and other types of content creators that are apart of the MC community into the game. The mod plans on having custom biomes, weapons, items and blocks into the game that are themed around content creators. "
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.creator_plus]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.6.117,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.creator_plus]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "creator_plus:woofing_springs",
+  "spawners": {
+    "type": "creator_plus:mike_crack",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

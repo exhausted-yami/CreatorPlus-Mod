@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "creator_plus:one_hundred",
+    "creator_plus:one_thousand",
+    "creator_plus:ten_thousand",
+    "creator_plus:one_hundred_thousand",
+    "creator_plus:one_million"
+  ]
+}

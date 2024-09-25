@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#minecraft:valid_spawn_modded",
+  "spawners": {
+    "type": "creator_plus:loot_crate",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}
