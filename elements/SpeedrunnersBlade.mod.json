@@ -8,7 +8,7 @@
     "texture": "speedrunners_blade",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Speedrunners Blade",
+    "name": "Speedrunner's Blade",
     "specialInformation": {
       "fixedValue": [
         "Gives the user speed boost"
