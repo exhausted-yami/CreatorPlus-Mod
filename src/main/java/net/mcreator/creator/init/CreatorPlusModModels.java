@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.creator.client.model.Modelrecording_camera;
 import net.mcreator.creator.client.model.Modelloot_crate;
 import net.mcreator.creator.client.model.Modeldiamond_minecart;
 
@@ -17,6 +18,7 @@ public class CreatorPlusModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modeldiamond_minecart.LAYER_LOCATION, Modeldiamond_minecart::createBodyLayer);
+		event.registerLayerDefinition(Modelrecording_camera.LAYER_LOCATION, Modelrecording_camera::createBodyLayer);
 		event.registerLayerDefinition(Modelloot_crate.LAYER_LOCATION, Modelloot_crate::createBodyLayer);
 	}
 }

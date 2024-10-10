@@ -12,6 +12,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.mcreator.creator.client.renderer.TommyinnitRenderer;
 import net.mcreator.creator.client.renderer.TechnoBladeRenderer;
 import net.mcreator.creator.client.renderer.SSundeeRenderer;
+import net.mcreator.creator.client.renderer.RecordingCameraRenderer;
 import net.mcreator.creator.client.renderer.PopularMMOsRenderer;
 import net.mcreator.creator.client.renderer.PlayerRenderer;
 import net.mcreator.creator.client.renderer.NorthWestTreesRenderer;
@@ -44,5 +45,6 @@ public class CreatorPlusModEntityRenderers {
 		event.registerEntityRenderer(CreatorPlusModEntities.MIKE_CRACK.get(), MikeCrackRenderer::new);
 		event.registerEntityRenderer(CreatorPlusModEntities.GAMING_WITH_JEN.get(), GamingWithJenRenderer::new);
 		event.registerEntityRenderer(CreatorPlusModEntities.DIAMOND_MINECART_MOB.get(), DiamondMinecartMobRenderer::new);
+		event.registerEntityRenderer(CreatorPlusModEntities.RECORDING_CAMERA.get(), RecordingCameraRenderer::new);
 	}
 }

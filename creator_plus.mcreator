@@ -365,71 +365,6 @@
       "path": "~/Advancements/Procedures"
     },
     {
-      "name": "RandomEffectStartedapplied",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "random_effect_startedapplied",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creator/procedures/RandomEffectStartedappliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items/Procedures"
-    },
-    {
-      "name": "Random",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "random",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creator/potion/RandomMobEffect.java"
-        ]
-      },
-      "path": "~/Items/Effects"
-    },
-    {
-      "name": "SpeedrunnersBladeToolInHandTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "speedrunners_blade_tool_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creator/procedures/SpeedrunnersBladeToolInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Items/Procedures"
-    },
-    {
-      "name": "SpeedrunnersBlade",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "speedrunners_blade",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creator/item/SpeedrunnersBladeItem.java",
-          "src/main/resources/assets/creator_plus/models/item/speedrunners_blade.json"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "Dream",
       "type": "livingentity",
       "compiles": true,
@@ -458,20 +393,6 @@
         ]
       },
       "path": "~/Entities"
-    },
-    {
-      "name": "ChaoticPotion",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chaotic_potion",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/creator_plus/models/item/chaotic_potion.json",
-          "src/main/java/net/mcreator/creator/item/ChaoticPotionItem.java"
-        ]
-      },
-      "path": "~/Items"
     },
     {
       "name": "Tommyinnit",
@@ -610,20 +531,6 @@
       "path": "~/Entities"
     },
     {
-      "name": "PranksterWand",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "prankster_wand",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/creator/item/PranksterWandItem.java",
-          "src/main/resources/assets/creator_plus/models/item/prankster_wand.json"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "WoofingSprings",
       "type": "biome",
       "compiles": true,
@@ -726,6 +633,61 @@
         ]
       },
       "path": "~/Items/Procedures"
+    },
+    {
+      "name": "RecordingCameraOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recording_camera_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/RecordingCameraOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecordingCameraRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recording_camera_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/creator/procedures/RecordingCameraRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecordingCamera",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recording_camera",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/creator_plus/models/item/recording_camera_spawn_egg.json",
+          "src/main/java/net/mcreator/creator/entity/RecordingCameraEntity.java",
+          "src/main/resources/data/creator_plus/neoforge/biome_modifier/recording_camera_biome_modifier.json",
+          "src/main/java/net/mcreator/creator/client/renderer/RecordingCameraRenderer.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -789,9 +751,6 @@
       "CUSTOM:TenThousand",
       "CUSTOM:OneHundredThousand",
       "CUSTOM:OneMillion"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~CUSTOM:SpeedrunnersBlade"
     ]
   },
   "tab_element_order": {},
@@ -799,18 +758,16 @@
     "en_us": {
       "entity.creator_plus.dream": "Dream",
       "advancements.mikecrack_favorite_dogcharacter.descr": "Enter the Woofing Springs biome",
+      "item.creator_plus.recording_camera_spawn_egg": "Recording Camera Spawn Egg",
       "entity.creator_plus.tommyinnit": "Tommyinnit",
       "advancements.mikecrack_favorite_dogcharacter.title": "Mikecrack dream biome",
       "item.creator_plus.dream_spawn_egg": "Dream Spawn Egg",
       "item.creator_plus.el_trollino_spawn_egg": "ElTrollino Spawn Egg",
-      "item.creator_plus.speedrunners_blade": "Speedrunner\u0027s Blade",
       "entity.creator_plus.el_trollino": "ElTrollino",
       "entity.creator_plus.diamond_minecart_mob": "Diamond Minecart",
-      "item.creator_plus.chaotic_potion": "Chaotic Potion",
       "entity.creator_plus.player": "Player",
-      "entity.creator_plus.authentic_games": "AuthenticGames",
       "item.creator_plus.popular_mm_os_spawn_egg": "PopularMMOs Spawn Egg",
-      "effect.creator_plus.random": "Random",
+      "entity.creator_plus.authentic_games": "AuthenticGames",
       "item.creator_plus.north_west_trees_spawn_egg": "NorthWestTrees Spawn Egg",
       "entity.creator_plus.gaming_with_jen": "GamingWithJen",
       "item.creator_plus.gaming_with_jen_spawn_egg": "GamingWithJen Spawn Egg",
@@ -825,12 +782,12 @@
       "item.creator_plus.loot_crate_spawn_egg": "Loot Crate Spawn Egg",
       "item.creator_plus.one_thousand": "$1000 Bill",
       "item.creator_plus.mike_crack_spawn_egg": "MikeCrack Spawn Egg",
+      "entity.creator_plus.recording_camera": "Recording Camera",
       "advancements.first_one_hundo.title": "First One Hundo",
       "biome.creator_plus.woofing_springs": "Woofing Springs",
       "advancements.first_one_hundo.descr": "Optain your first $100",
       "item.creator_plus.ssundee_spawn_egg": "Ssundee Spawn Egg",
       "advancements.creator_plus_advancement.descr": "Start a world with the Creator+ mod in it",
-      "item.creator_plus.prankster_wand": "Prankster’s Wand",
       "item.creator_plus.dan_tdm_spawn_egg": "DanTDM Spawn Egg",
       "entity.creator_plus.north_west_trees": "NorthWestTrees",
       "item.creator_plus.diamond_minecart_mob_spawn_egg": "Diamond Minecart Spawn Egg",
@@ -913,7 +870,7 @@
     "version": "0.0.1",
     "description": "Introducing Creator+ mod, a Minecraft mod that brings your favorite Minecraft content creators to into the game!\\n\\nThe mod adds youtubers, twitch streamers and other types of content creators that are apart of the MC community into the game. The mod plans on having custom biomes, weapons, items and blocks into the game that are themed around content creators. ",
     "author": "Yami",
-    "websiteURL": "https://yami-pl.xyz/",
+    "websiteURL": "https://exhausted.site/",
     "license": "All Rights Reserved",
     "serverSideOnly": false,
     "modPicture": "creator_logo_square",

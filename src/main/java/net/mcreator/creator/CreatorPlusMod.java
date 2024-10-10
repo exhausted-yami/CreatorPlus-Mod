@@ -20,7 +20,6 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.creator.network.CreatorPlusModVariables;
 import net.mcreator.creator.init.CreatorPlusModTabs;
-import net.mcreator.creator.init.CreatorPlusModMobEffects;
 import net.mcreator.creator.init.CreatorPlusModMenus;
 import net.mcreator.creator.init.CreatorPlusModItems;
 import net.mcreator.creator.init.CreatorPlusModEntities;
@@ -47,8 +46,6 @@ public class CreatorPlusMod {
 		CreatorPlusModEntities.REGISTRY.register(modEventBus);
 		CreatorPlusModTabs.REGISTRY.register(modEventBus);
 		CreatorPlusModVariables.ATTACHMENT_TYPES.register(modEventBus);
-
-		CreatorPlusModMobEffects.REGISTRY.register(modEventBus);
 
 		CreatorPlusModMenus.REGISTRY.register(modEventBus);
 

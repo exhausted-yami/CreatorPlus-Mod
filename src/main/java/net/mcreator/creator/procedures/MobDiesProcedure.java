@@ -13,11 +13,8 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.creator.init.CreatorPlusModItems;
-import net.mcreator.creator.entity.TommyinnitEntity;
-import net.mcreator.creator.entity.SSundeeEntity;
 import net.mcreator.creator.entity.PlayerEntity;
 import net.mcreator.creator.entity.NorthWestTreesEntity;
-import net.mcreator.creator.entity.DreamEntity;
 
 public class MobDiesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -39,33 +36,6 @@ public class MobDiesProcedure {
 			if (Math.random() > 0.3 && Math.random() < 0.5) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Blocks.POPPY));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
-		}
-		if (entity instanceof DreamEntity) {
-			if (Math.random() > 0.3 && Math.random() < 0.5) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(CreatorPlusModItems.SPEEDRUNNERS_BLADE.get()));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
-		}
-		if (entity instanceof SSundeeEntity) {
-			if (Math.random() > 0.3 && Math.random() < 0.5) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(CreatorPlusModItems.CHAOTIC_POTION.get()));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
-		}
-		if (entity instanceof TommyinnitEntity) {
-			if (Math.random() > 0.3 && Math.random() < 0.5) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(CreatorPlusModItems.PRANKSTER_WAND.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

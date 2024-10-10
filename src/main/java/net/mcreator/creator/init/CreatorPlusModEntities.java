@@ -19,6 +19,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.creator.entity.TommyinnitEntity;
 import net.mcreator.creator.entity.TechnoBladeEntity;
 import net.mcreator.creator.entity.SSundeeEntity;
+import net.mcreator.creator.entity.RecordingCameraEntity;
 import net.mcreator.creator.entity.PopularMMOsEntity;
 import net.mcreator.creator.entity.PlayerEntity;
 import net.mcreator.creator.entity.NorthWestTreesEntity;
@@ -96,6 +97,10 @@ public class CreatorPlusModEntities {
 			EntityType.Builder.<DiamondMinecartMobEntity>of(DiamondMinecartMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RecordingCameraEntity>> RECORDING_CAMERA = register("recording_camera",
+			EntityType.Builder.<RecordingCameraEntity>of(RecordingCameraEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -118,6 +123,7 @@ public class CreatorPlusModEntities {
 		MikeCrackEntity.init(event);
 		GamingWithJenEntity.init(event);
 		DiamondMinecartMobEntity.init(event);
+		RecordingCameraEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -137,5 +143,6 @@ public class CreatorPlusModEntities {
 		event.put(MIKE_CRACK.get(), MikeCrackEntity.createAttributes().build());
 		event.put(GAMING_WITH_JEN.get(), GamingWithJenEntity.createAttributes().build());
 		event.put(DIAMOND_MINECART_MOB.get(), DiamondMinecartMobEntity.createAttributes().build());
+		event.put(RECORDING_CAMERA.get(), RecordingCameraEntity.createAttributes().build());
 	}
 }

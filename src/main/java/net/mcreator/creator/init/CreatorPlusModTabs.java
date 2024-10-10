@@ -30,9 +30,6 @@ public class CreatorPlusModTabs {
 				tabData.accept(CreatorPlusModItems.ONE_MILLION.get());
 				tabData.accept(CreatorPlusModItems.THE_NORTH_TREE_PICKAXE.get());
 				tabData.accept(CreatorPlusModItems.CARD.get());
-				tabData.accept(CreatorPlusModItems.SPEEDRUNNERS_BLADE.get());
-				tabData.accept(CreatorPlusModItems.CHAOTIC_POTION.get());
-				tabData.accept(CreatorPlusModItems.PRANKSTER_WAND.get());
 				tabData.accept(CreatorPlusModItems.DIAMOND_MINECART.get());
 			}).withSearchBar().build());
 
@@ -54,9 +51,9 @@ public class CreatorPlusModTabs {
 			tabData.accept(CreatorPlusModItems.MIKE_CRACK_SPAWN_EGG.get());
 			tabData.accept(CreatorPlusModItems.GAMING_WITH_JEN_SPAWN_EGG.get());
 			tabData.accept(CreatorPlusModItems.DIAMOND_MINECART_MOB_SPAWN_EGG.get());
+			tabData.accept(CreatorPlusModItems.RECORDING_CAMERA_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CreatorPlusModItems.THE_NORTH_TREE_PICKAXE.get());
-			tabData.accept(CreatorPlusModItems.SPEEDRUNNERS_BLADE.get());
 		}
 	}
 }
